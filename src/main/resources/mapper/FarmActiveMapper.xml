@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jd.farm.dao.FarmActiveDao">
+    <resultMap id="BaseResultMap" type="com.jd.farm.domain.FarmActive">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="active_name" jdbcType="VARCHAR" property="activeName"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    id,
+    active_code,
+    active_name,
+    plot_code,
+    plot_name,
+    plot_area,
+    crop_code,
+    crop_category,
+    crop_name_code,
+    crop_name,
+    period_code,
+    period_name,
+    growth_cycle,
+    active_type,
+    template_name,
+    crop_img_url,
+    plan_code,
+    plan_name,
+    farm_code,
+    start_time,
+    end_time,
+    operate_start_time,
+    operate_end_time,
+    state,
+    note,
+    casualLaborer_num,
+    create_time,
+    update_time,
+    create_user,
+    update_user,
+    clover_state
+  </sql>
+
+
+</mapper>
